@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "search": "/components/search/index",
+    "carousel": "/components/carousel/index",
+    "liuyuno-tabs": "/components/liuyuno-tabs/liuyuno-tabs"
+  }
+}

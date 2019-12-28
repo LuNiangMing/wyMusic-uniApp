@@ -1,0 +1,80 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/Find/main",
+    "pages/Video/main",
+    "pages/Mine/main",
+    "pages/Cloud/main",
+    "pages/Account/main"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true,
+    "transparentTitle": "always"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#f5f5f5",
+    "selectedColor": "#f10215",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "发现",
+        "pagePath": "pages/Find/main",
+        "iconPath": "static/tabs/find.png",
+        "selectedIconPath": "static/tabs/find-active.png"
+      },
+      {
+        "text": "视频",
+        "pagePath": "pages/Video/main",
+        "iconPath": "static/tabs/video_play.png",
+        "selectedIconPath": "static/tabs/video_play-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/Mine/main",
+        "iconPath": "static/tabs/music.png",
+        "selectedIconPath": "static/tabs/music-active.png"
+      },
+      {
+        "text": "云村",
+        "pagePath": "pages/Cloud/main",
+        "iconPath": "static/tabs/cun.png",
+        "selectedIconPath": "static/tabs/cun-active.png"
+      },
+      {
+        "text": "账号",
+        "pagePath": "pages/Account/main",
+        "iconPath": "static/tabs/account.png",
+        "selectedIconPath": "static/tabs/account-active.png"
+      }
+    ],
+    "items": [
+      {
+        "name": "Music",
+        "pagePath": "pages/Mine/main",
+        "icon": "static/tabs/Music.png",
+        "activeIcon": "static/tabs/Music-active.png"
+      },
+      {
+        "name": "浜戞潙",
+        "pagePath": "pages/Clound/main",
+        "icon": "static/tabs/cun.png",
+        "activeIcon": "static/tabs/cun-active.png"
+      },
+      {
+        "name": "璐﹀彿",
+        "pagePath": "pages/Account/main",
+        "icon": "static/tabs/account.png",
+        "activeIcon": "static/tabs/account-active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

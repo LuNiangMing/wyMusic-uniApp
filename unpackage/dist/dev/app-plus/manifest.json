@@ -1,0 +1,164 @@
+{
+  "@platforms": [
+    "android",
+    "iPhone",
+    "iPad"
+  ],
+  "id": "__UNI__ABA38E7",
+  "name": "仿网易云音乐App",
+  "version": {
+    "name": "1.0.0",
+    "code": "100"
+  },
+  "description": "高仿网易云音乐App",
+  "launch_path": "__uniappview.html",
+  "developer": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "permissions": {
+    "UniNView": {
+      "description": "UniNView原生渲染"
+    }
+  },
+  "plus": {
+    "useragent": {
+      "value": "uni-app",
+      "concatenate": true
+    },
+    "splashscreen": {
+      "target": "id:1",
+      "autoclose": true,
+      "waiting": true,
+      "delay": 0
+    },
+    "popGesture": "close",
+    "launchwebview": {
+      "id": "1",
+      "kernel": "WKWebview",
+      "uni-app": "auto"
+    },
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "light",
+      "background": "#f5f5f5"
+    },
+    "usingComponents": true,
+    "nvueCompiler": "weex",
+    "distribute": {
+      "google": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+          "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+          "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+          "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+          "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+          "<uses-feature android:name=\"android.hardware.camera\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+        ]
+      },
+      "apple": {},
+      "plugins": {
+        "audio": {
+          "mp3": {
+            "description": "Android平台录音支持MP3格式文件"
+          }
+        }
+      }
+    },
+    "arguments": "{\"name\":\"Account\",\"query\":\"\",\"id\":0,\"pathName\":\"pages/Account/main\"}",
+    "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#f5f5f5",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
+    "uni-app": {
+      "compilerVersion": "2.4.6",
+      "control": "v8",
+      "nvueCompiler": "weex",
+      "renderer": "auto"
+    },
+    "tabBar": {
+      "color": "#999",
+      "backgroundColor": "#f5f5f5",
+      "selectedColor": "#f10215",
+      "borderStyle": "rgba(255,255,255,0.4)",
+      "list": [
+        {
+          "text": "发现",
+          "pagePath": "pages/Find/main",
+          "iconPath": "static/tabs/find.png",
+          "selectedIconPath": "static/tabs/find-active.png"
+        },
+        {
+          "text": "视频",
+          "pagePath": "pages/Video/main",
+          "iconPath": "static/tabs/video_play.png",
+          "selectedIconPath": "static/tabs/video_play-active.png"
+        },
+        {
+          "text": "我的",
+          "pagePath": "pages/Mine/main",
+          "iconPath": "static/tabs/music.png",
+          "selectedIconPath": "static/tabs/music-active.png"
+        },
+        {
+          "text": "云村",
+          "pagePath": "pages/Cloud/main",
+          "iconPath": "static/tabs/peoples.png",
+          "selectedIconPath": "static/tabs/peoples-active.png"
+        },
+        {
+          "text": "账号",
+          "pagePath": "pages/Account/main",
+          "iconPath": "static/tabs/account.png",
+          "selectedIconPath": "static/tabs/arrount-active.png"
+        }
+      ],
+      "items": [
+        {
+          "name": "Music",
+          "pagePath": "pages/Mine/main",
+          "icon": "static/tabs/Music.png",
+          "activeIcon": "static/tabs/Music-active.png"
+        },
+        {
+          "name": "浜戞潙",
+          "pagePath": "pages/Clound/main",
+          "icon": "static/tabs/cun.png",
+          "activeIcon": "static/tabs/cun-active.png"
+        },
+        {
+          "name": "璐﹀彿",
+          "pagePath": "pages/Account/main",
+          "icon": "static/tabs/account.png",
+          "activeIcon": "static/tabs/account-active.png"
+        }
+      ],
+      "position": "bottom",
+      "height": "50px",
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 4
+    }
+  }
+}

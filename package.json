@@ -1,0 +1,17 @@
+{
+  "name": "wy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jweixin-module": "^1.4.1",
+    "less-loader": "^5.0.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.3"
+  }
+}

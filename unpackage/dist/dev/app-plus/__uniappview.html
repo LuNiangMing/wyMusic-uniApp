@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"仿网易云音乐App","entryPagePath":"pages/index/main.html","page":{"pages/index/main.html":{"window":{"navigationBarTitleText":"uni-app","usingComponents":{}}},"pages/Find/main.html":{"window":{"usingComponents":{"search":"/components/search/index","carousel":"/components/carousel/index","liuyuno-tabs":"/components/liuyuno-tabs/liuyuno-tabs"}}},"pages/Video/main.html":{"window":{"navigationBarTitleText":"视频","usingComponents":{}}},"pages/Mine/main.html":{"window":{"navigationBarTitleText":"我的","usingComponents":{}}},"pages/Cloud/main.html":{"window":{"navigationBarTitleText":"云村","usingComponents":{}}},"pages/Account/main.html":{"window":{"navigationBarTitleText":"账号","titleNView":false,"usingComponents":{"uni-list":"/components/uni-list/uni-list","uni-list-item":"/components/uni-list-item/uni-list-item","uni-icons":"/components/uni-icons/uni-icons"}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarTitleText":"APP-PLUS","navigationBarBackgroundColor":"#f5f5f5","backgroundColor":"#f5f5f5","enablePullDownRefresh":true,"transparentTitle":"always"}},"tabBar":{"color":"#999","selectedColor":"#f10215","backgroundColor":"#f5f5f5","borderStyle":"white","list":[{"text":"发现","pagePath":"pages/Find/main.html","iconPath":"static/tabs/find.png","selectedIconPath":"static/tabs/find-active.png"},{"text":"视频","pagePath":"pages/Video/main.html","iconPath":"static/tabs/video_play.png","selectedIconPath":"static/tabs/video_play-active.png"},{"text":"我的","pagePath":"pages/Mine/main.html","iconPath":"static/tabs/music.png","selectedIconPath":"static/tabs/music-active.png"},{"text":"云村","pagePath":"pages/Cloud/main.html","iconPath":"static/tabs/peoples.png","selectedIconPath":"static/tabs/peoples-active.png"},{"text":"账号","pagePath":"pages/Account/main.html","iconPath":"static/tabs/account.png","selectedIconPath":"static/tabs/arrount-active.png"}],"position":"bottom","items":[{"name":"Music","pagePath":"pages/Mine/main","icon":"static/tabs/Music.png","activeIcon":"static/tabs/Music-active.png"},{"name":"浜戞潙","pagePath":"pages/Clound/main","icon":"static/tabs/cun.png","activeIcon":"static/tabs/cun-active.png"},{"name":"璐﹀彿","pagePath":"pages/Account/main","icon":"static/tabs/account.png","activeIcon":"static/tabs/account-active.png"}]},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/main","pages/Find/main","pages/Video/main","pages/Mine/main","pages/Cloud/main","pages/Account/main"],"nvueCompiler":"weex","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.4.6","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>
