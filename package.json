@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "jweixin-module": "^1.4.1",
-    "less-loader": "^5.0.0",
+    "less-loader": "^11.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.3"
   }
